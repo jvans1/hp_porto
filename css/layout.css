@@ -1,0 +1,95 @@
+/*
+// Table of content
+// -----------------------------------------------------------------------------
+// - 1. Header
+// - 2. Footer
+// - 3. Hero Title
+*/
+/* -----------------------------------------------------------------------------
+// 1. Header
+// ----------------------------------------------------------------------------- */
+header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 1; }
+
+/* -----------------------------------------------------------------------------
+// 2. Footer
+// ----------------------------------------------------------------------------- */
+footer {
+  padding: 80px 0;
+  background-color: #242424;
+  color: #717171; }
+  footer .footer-social {
+    float: left;
+    padding: 0;
+    margin: 0; }
+    footer .footer-social li {
+      display: inline-block; }
+    footer .footer-social a {
+      display: inline-block;
+      font-size: 18px;
+      width: 70px;
+      height: 70px;
+      margin-right: 10px;
+      line-height: 70px;
+      background-color: #181818;
+      color: #fff;
+      text-align: center;
+      -webkit-transition: background-color 0.5s;
+      -moz-transition: background-color 0.5s;
+      -ms-transition: background-color 0.5s;
+      -o-transition: background-color 0.5s;
+      transition: background-color 0.5s; }
+      footer .footer-social a:hover {
+        background-color: #ed146e; }
+  footer .footer-copyright {
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
+    float: right;
+    margin-top: 10px;
+    text-align: right;
+    text-transform: uppercase; }
+    footer .footer-copyright p {
+      color: #717171;
+      font-size: 12px; }
+    footer .footer-copyright strong {
+      color: #fff;
+      font-weight: 400;
+      font-size: 30px; }
+  @media (max-width: 768px) {
+    footer .footer-social {
+      float: none;
+      text-align: center; }
+    footer .footer-copyright {
+      float: none;
+      text-align: center;
+      margin-top: 20px; } }
+
+/* -----------------------------------------------------------------------------
+// 3. Hero Title
+// ----------------------------------------------------------------------------- */
+.hero-title {
+  padding: 75px 0 400px 0;
+  background-color: #aeaeae;
+  text-align: center;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .hero-title h1 {
+    margin-top: -100;
+    font-size: 120px;
+   }
+  .hero-title p {
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: #ed146e;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+
+/*# sourceMappingURL=layout.css.map */
