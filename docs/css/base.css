@@ -14,6 +14,13 @@
   width: 100%;
   min-height: 10vh;
 }
+.post {
+  padding-top: 2em;
+}
+
+.description {
+  font-size: 1.3em;
+}
 
 .placeholder-img{
   max-width: 1200px;
