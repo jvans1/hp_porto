@@ -1,7 +1,8 @@
 <!doctype html>
 <html class="no-js" lang="">
     <head>
-      <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+        <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+        <script src="image-loading.js" ></script>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Paradise in Porto</title>
@@ -80,116 +81,226 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <img src="img/scaled/Spencer.jpg" alt="Spencer Jentzsch">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" src='img/small/small-Lori.jpg' data-load-in-background="img/scaled/Lori.jpg" alt="Lori Tillery">
+                        </div>
+                        <h2>Lori Tillery</h2>
+                        <p> Carrboro, NC, USA</p>
+                        <p> Full stack developer, Professional badass, ex-Navy, Fitness enthusiast</p>
+
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" src="img/small/small-Spencer.jpg" data-load-in-background="img/scaled/Spencer.jpg" alt="Spencer Jentzsch">
+                        </div>
                         <h2>Spencer Jentzsch</h2>
                         <p>Madison, WI, USA</p>
                         <p> Trip Facilitator, Sangria aficionado, Can't go anywhere without his signature hat, Korean speaker, Tapabento advocate</p>
 
-                        <img src="img/scaled/Aakash.jpg" alt="Aakash Goyal">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" src="img/small/small-Aakash.jpg" data-load-in-background="img/scaled/Aakash.jpg" alt="Aakash Goyal">
+                        </div>
                         <h2>Aakash Goyal</h2>
                         <p> Bombay, India</p>
                         <p>Full stack developer, Goal to build an app used by at least a million people </p>
 
-                        <img src="img/scaled/Zernyu.jpg" alt="Zernyu Chou">
-                        <h2>Zernyu Chou</h2>
-                        <p>Chicaco, IL, USA</p>
-                        <p> Full stack developer, Fish tank expert, Extreme cyclist, Neapolitan legs</p>
-
-                        <img src="img/scaled/Hylke.jpg" alt="Hylke Visser">
-                        <h2>Hylke Visser</h2>
-                        <p>The Hague, Netherlands</p>
-                        <p> Backend developer, Windsurfer</p>
-
-                        <img src="img/scaled/Agni.jpg" alt="Agnibha Kumar Nath">
-                        <h2>Agni Kumar Nath</h2>
-                        <p> Bangalore, India</p>
-                        <p>Developer and astronomer, Plays the ukulele, Music geek</p>
-
-                        <img src="img/scaled/Wessel.jpg" alt="Wessel Versluis">
-                        <h2>Wessel Versluis</h2>
-                        <p>Amsterdam, Netherlands</p>
-                        <p> Freelance designer and student, Master of mixing floral prints, Yo mama</p>
-
-                        <img src="img/scaled/Richard.jpg" alt="Richard Littauer">
-                        <h2>Richard Littauer</h2>
-                        <p> Cambridge, MA, USA </p>
-                        <p> UI/UX developer, Birdman, Only wears hiking boots, The user is (not) drunk</p>
-
-                        <img src="img/scaled/Antoine.jpg" alt="Antoine Rondelet">
-                        <h2>Antoine Rondelet</h2>
-                        <p> Paris, France</p>
-                        <p> Student and Java developer, Wants to change the Finance world, B-boy</p>
-
-                        <img src="img/scaled/Iva.jpg" alt="Iva Vigan">
-                        <h2>Iva Vigan</h2>
-                        <p>Zadar, Croatia</p>
-                        <p> Writer and teacher, Cooks us delicious food, Teaches Spencer useful phrases</p>
-
-                        <img src="img/scaled/Anton.jpg" alt="Anton Oparin">
-                        <h2>Anton Oparin</h2>
-                        <p> Developer, Avid cyclist, All about loyalty </p>
-
-                        <img src="img/scaled/Zach.jpg" alt="Zach Waterfield">
-                        <h2>Zach Waterfield</h2>
-                        <p> Barrie, ON, Canada</p>
-                        <p> Developer, student and CTO, Loves snackdicks, Blogger, Luscious locks, Really nice (Canadian)</p>
-
-                        <img src="img/scaled/Cayla.jpg" alt="Cayla Green">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Cayla.jpg" src='img/small/small-Cayla.jpg' alt="Cayla Green">
+                        </div>
                         <h2>Cayla Green</h2>
                         <p>Austin, TX, USA</p>
                         <p>Ruby Developer, So Austin, Developer lineage, Rollerskate queen, Crochets</p>
 
-                        <img src="img/scaled/Brad.jpg" alt="Brad Stachurski">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Anton.jpg"  src="img/small/small-Anton.jpg" alt="Anton Oparin">
+                        </div>
+                        <h2>Anton Oparin</h2>
+                        <p> St. Petersburg, Russia </p>
+                        <p> Developer, Avid cyclist, All about loyalty </p>
+
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Zernyu.jpg" class="placeholder-img" src="img/small/small-Zernyu.jpg" alt="Zernyu Chou">
+                        </div>
+                        <h2>Zernyu Chou</h2>
+                        <p>Chicaco, IL, USA</p>
+                        <p> Full stack developer, Fish tank expert, Extreme cyclist, Neapolitan legs</p>
+
+                        <div class="img-container">
+                          <div class="aspect-ratio-reference">
+                            <div class="placeholder-container">
+                              <div class="loader">
+                              </div>
+                              <img class="vertical-placeholder-img" data-load-in-background="img/scaled/Hylke.jpg" src="img/small/small-Hylke.jpg" alt="Hylke Visser">
+                            </div>
+                          </div>
+                        </div>
+                        <h2>Hylke Visser</h2>
+                        <p>The Hague, Netherlands</p>
+                        <p> Backend developer, Windsurfer</p>
+
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Agni.jpg" src="img/small/small-Agni.jpg" alt="Agnibha Kumar Nath">
+                        </div>
+                        <h2>Agni Kumar Nath</h2>
+                        <p> Bangalore, India</p>
+                        <p>Developer and astronomer, Plays the ukulele, Music geek</p>
+
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Wessel.jpg" src="img/small/small-Wessel.jpg" alt="Wessel Versluis">
+                        </div>
+                        <h2>Wessel Versluis</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p> Freelance designer and student, Master of mixing floral prints, Yo mama</p>
+
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                            <img class="placeholder-img" data-load-in-background="img/scaled/Richard.jpg" src="img/small/small-Richard.jpg" alt="Richard Littauer">
+                        </div>
+                        <h2>Richard Littauer</h2>
+                        <p> Cambridge, MA, USA </p>
+                        <p> UI/UX developer, Birdman, Only wears hiking boots, The user is (not) drunk</p>
+
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Antoine.jpg" src="img/small/small-Antoine.jpg" alt="Antoine Rondelet">
+                        </div>
+                        <h2>Antoine Rondelet</h2>
+                        <p> Paris, France</p>
+                        <p> Student and Java developer, Wants to change the Finance world, B-boy</p>
+
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Iva.jpg"  src="img/small/small-Iva.jpg" alt="Iva Vigan">
+                        </div>
+                        <h2>Iva Vigan</h2>
+                        <p>Zadar, Croatia</p>
+                        <p> Writer and teacher, Cooks us delicious food, Teaches Spencer useful phrases</p>
+
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Zach.jpg" src="img/small/small-Zach.jpg" alt="Zach Waterfield">
+                        </div>
+                        <h2>Zach Waterfield</h2>
+                        <p> Barrie, ON, Canada</p>
+                        <p> Developer, student and CTO, Loves snackdicks, Blogger, Luscious locks, Really nice (Canadian)</p>
+
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Brad.jpg" src="img/small/small-Brad.jpg" alt="Brad Stachurski">
+                        </div>
                         <h2>Brad Stachurski</h2>
                         <p>Fort Collins, CO, USA</p>
                         <p> Free spirit, Mediation and yoga guru, Ultra marathoner on the pursuit of adventure, Living a summer of yes</p>
 
-                        <img src="img/scaled/Henry.jpg" alt="Henry Snow">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Henry.jpg" src="img/small/small-Henry.jpg" alt="Henry Snow">
+                        </div>
                         <h2>Henry Snow</h2>
                         <p>New York City, NY, USA</p>
                         <p> Creating abroad, YouTuber, Japanese speaker</p>
 
-                        <img src="img/scaled/Connor.jpg" alt="Connor Savage">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Connor.jpg" src="img/small/small-Connor.jpg" alt="Connor Savage">
+                        </div>
                         <h2>Connor Savage</h2>
                         <p>New York City, NY, USA</p>
                         <p> Dev lead, The beard is boss, Closes out karaoke </p>
 
-                        <img src="img/scaled/Courtney1.jpg" alt="Courtney Machi">
+                        <div class="img-container">
+                          <div class="aspect-ratio-reference">
+                            <div class="placeholder-container">
+                              <div class="loader">
+                              </div>
+                              <img class="vertical-placeholder-img" data-load-in-background="img/scaled/Courtney1.jpg" src="img/small/small-Courtney1.jpg" alt="Courtney Machi">
+                            </div>
+                          </div>
+                        </div>
                         <h2>Courtney Machi</h2>
                         <p>San Francisco, CA, USA</p>
                         <p>Product Manager and coder, Yoga teacher, Potluck initiator, Rosé aficionado and Taxca discoverer</p>
 
-                        <img src="img/scaled/Foca.jpg" alt="Nicolas Sanguinetti">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Foca.jpg" src="img/small/small-Foca.jpg" alt="Nicolas Sanguinetti">
+                        </div>
                         <h2>Nicolas (Foca) Sanguinetti</h2>
                         <p>Montevideo, Uruguay</p>
                         <p> Freelance developer and geek, God of the seals, Ultimate Foodie, It's FIIIIINNNNEEEE</p>
 
-                        <img src="img/scaled/Grayson.jpg" alt="Grayson Manley">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Grayson.jpg" src="img/small/small-Grayson.jpg" alt="Grayson Manley">
+                        </div>
                         <h2>Grayson Manley</h2>
                         <p>Chicago, IL, USA</p>
                         <p> Developer, Acrobat, ex-gymanst, and circus artist, Learning Japanese</p>
 
-                        <img src="img/scaled/Dakota.jpg" alt="Dakota Murray">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Dakota.jpg" src="img/small/small-Dakota.jpg" alt="Dakota Murray">
+                        </div>
                         <h2>Dakota Murray</h2>
                         <p>Asheville, NC, USA</p>
                         <p>PhD student and data scientist, Affectionately know as Dacora, The bees knees</p>
 
-                        <img src="img/scaled/Dale.jpg" alt="Dale Johnson">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Dale.jpg" src="img/small/small-Dale.jpg" alt="Dale Johnson">
+                        </div>
                         <h2>Dale Johnson</h2>
                         <p>Cardiff, Wales</p>
                         <p> Illustrator and teacher, Banter Bus Coordinator, King chunderer</p>
 
-                        <img src="img/scaled/Izzy.jpg" alt="Iskender Piyale-Sheard">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Izzy.jpg" src="img/small/small-Izzy.jpg" alt="Iskender Piyale-Sheard">
+                        </div>
                         <h2>Iskender Piyale-Sheard</h2>
                         <p>Toronto, ON, Canada</p>
                         <p> Trip Facilitator and teacher, May be seen wearing a horse head, Remote as fuck</p>
 
-                        <img src="img/scaled/Dorian.jpg" alt="Dorian Amouroux">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Dorian.jpg" src="img/small/small-Dorian.jpg" alt="Dorian Amouroux">
+                        </div>
                         <h2>Dorian Amouroux</h2>
                         <p>Bordeaux, France</p>
                         <p>Web developer and student, Going to California, Long Beach, Survives seafood restaurants (he’s allergic but still goes with us), Photoshop pro</p>
 
-                        <img src="img/scaled/James.jpg" alt="James Vanneman">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/James.jpg" src="img/small/small-James.jpg" alt="James Vanneman">
+                        </div>
                         <h2 class="inline">James Vanneman</h2>
                         <p>
                           (guest photograph: Johan Stokking)
@@ -197,178 +308,304 @@
                         <p>Boston, MA, USA</p>
                         <p> Haskell developer and photographer, Marathon legs (always hydrated), Super bock die hard, Made this website!!</p>
 
-                        <img src="img/scaled/Haiko.jpg" alt="Haiko Shol">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Haiko.jpg" src="img/small/small-Haiko.jpg" alt="Haiko Shol">
+                        </div>
                         <h2>Haiko Shol</h2>
                         <p>Berlin, Germany</p>
                         <p> Freelance software developer, Aspiring meditator, Pragmatist</p>
 
-                        <img src="img/scaled/Lori.jpg" alt="Lori Tillery">
-                        <h2>Lori Tillery</h2>
-                        <p> Carrboro, NC, USA</p>
-                        <p> Full stack developer, Professional badass, ex-Navy, Fitness enthusiast</p>
-
-                        <img src="img/scaled/Johan.jpg" alt="Johan Stokking">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Johan.jpg"  src="img/small/small-Johan.jpg" alt="Johan Stokking">
+                        </div>
                         <h2>Johan Stokking</h2>
                         <p>Amsterdam, Netherlands</p>
                         <p> Tech Lead and cofounder, Boy band lead, Loves white pants</p>
 
-                        <img src="img/scaled/Jay.jpg" alt="Jay Meistrich">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Jay.jpg" src="img/small/small-Jay.jpg" alt="Jay Meistrich">
+                        </div>
                         <h2>Jay Meistrich</h2>
                         <p>San Diego, CA, USA</p>
                         <p> Founder and developer, Worlds most famous digital nomad, Only wears solid colors</p>
 
-                        <img src="img/scaled/Jenn.jpg" alt="Jenn Vargas">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Jenn.jpg" src="img/small/small-Jenn.jpg" alt="Jenn Vargas">
+                        </div>
                         <h2>Jenn Vargas</h2>
                         <p>New Jersey, USA</p>
                         <p> Freelance product consultant, Gelato aficionado, Hitting 30 before 30</p>
 
-                        <img src="img/scaled/Ellen.jpg" alt="Ellen Koenig">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Ellen.jpg" src="img/small/small-Ellen.jpg" alt="Ellen Koenig">
+                        </div>
                         <h2>Ellen Koenig</h2>
                         <p>Berlin, Germany</p>
                         <p> Data Engineer, Best shirts of the trip, Berlin native</p>
 
-                        <img src="img/scaled/Jess.jpg" alt="Jess Warren">
+                        <div class="img-container">
+                          <div class="aspect-ratio-reference">
+                            <div class="placeholder-container">
+                              <div class="loader">
+                              </div>
+                              <img class="vertical-placeholder-img" data-load-in-background="img/scaled/Jess.jpg"  src="img/small/small-Jess.jpg" alt="Jess Warren">
+                            </div>
+                          </div>
+                        </div>
                         <h2>Jess Warren</h2>
                         <p>Austin, TX, USA</p>
                         <p> Freelance designer, Card game creator, Breakfast taco lover, Daily videographer</p>
 
-                        <img src="img/scaled/Jessica.jpg" alt="Jessica Simon">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Jessica.jpg" src="img/small/small-Jessica.jpg" alt="Jessica Simon">
+                        </div>
                         <h2>Jessica Simon</h2>
                         <p>New York City, NY, USA</p>
                         <p> Developer, Cheerleader 4 Lyf</p>
 
-                        <img src="img/scaled/Ken.jpg" alt="Ken Hu">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Ken.jpg" src="img/small/small-Ken.jpg" alt="Ken Hu">
+                        </div>
                         <h2>Ken Hu</h2>
                         <p>Philladelphia, PA, USA</p>
                         <p>Python developer and data scientist, Fashion artist, Dress shoes and bowties for days, Professional networker</p>
 
-                        <img src="img/scaled/Laurens.jpg" alt="Laurens Slats">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Laurens.jpg" src="img/small/small-Laurens.jpg" alt="Laurens Slats">
+                        </div>
                         <h2>Laurens Slats</h2>
                         <p>Amsterdam, Netherlands</p>
                         <p> Community Manager, Student, Runs for fun</p>
 
 
-                        <img src="img/scaled/Leif.jpg" alt="Leif Terje Fonnes">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Leif.jpg" src="img/small/small-Leif.jpg" alt="Leif Terje Fonnes">
+                        </div>
                         <h2>Leif Terje Fonnes</h2>
                         <p>Bergen, Norway</p>
                         <p> Full stack developer, Jack-of-all, Loves sailing, Brought the good weather with him</p>
 
-                        <img src="img/scaled/lola.jpg" alt="Lola Rigaut-Luczak">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/lola.jpg" src="img/small/small-lola.jpg" alt="Lola Rigaut-Luczak">
+                        </div>
                         <h2>Lola Rigaut-Luczak</h2>
                         <p>Amiens, France</p>
                         <p> Hacker and developer, Proof of work chain advocate, Kitesurfer, Finds us all the good music</p>
 
-                        <img src="img/scaled/Lucas.jpg" alt="Lucas Mancini">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Lucas.jpg"  src="img/small/small-Lucas.jpg" alt="Lucas Mancini">
+                        </div>
                         <h2>Lucas Mancini</h2>
                         <p>Buenos Aires, Argentina</p>
                         <p> Engineer, Warmest smile, Won't get Facebook</p>
 
-                        <img src="img/scaled/Luka.jpg" alt="Luka Sirac">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Luka.jpg"  src="img/small/small-Luka.jpg" alt="Luka Sirac">
+                        </div>
                         <h2>Luka Sirac</h2>
                         <p>Sibenik, Croatia</p>
                         <p>Angular developer, Defends fanny packs to the death, Prefers straightforward communication, Dog lover</p>
 
-                        <img src="img/scaled/Michael.jpg" alt="Michael Hackner">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Michael.jpg" src="img/small/small-Michael.jpg" alt="Michael Hackner">
+                        </div>
                         <h2>Michael Hackner</h2>
                         <p> Bethesda, MD, USA</p>
                         <p> Java developer, Can hold eye contact, Curly quotation advocate</p>
 
-                        <img src="img/scaled/Michele.jpg" alt="Michele Simonato">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Michele.jpg"  src="img/small/small-Michele.jpg" alt="Michele Simonato">
+                        </div>
                         <h2>Michele Simonato</h2>
                         <p> Padua, Italy </p>
                         <p> Serial entrepreneur, Zen Master squirrel jumper, Fuck Brexit</p>
 
-                        <img src="img/scaled/Miranda.jpg" alt="Miranda Bishop">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Miranda.jpg" src="img/small/small-Miranda.jpg" alt="Miranda Bishop">
+                        </div>
                         <h2>Miranda Bishop</h2>
                         <p> Cardiff, Wales </p>
                         <p> Social Media Consultant, Rave dancer, Makes a mean English Country Summer, Infectious laugh</p>
 
 
-                        <img src="img/scaled/Morgan.jpg" alt="Morgan Willowgate">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Morgan.jpg" src="img/small/small-Morgan.jpg" alt="Morgan Willowgate">
+                        </div>
                         <h2>Morgan Willowgate</h2>
                         <p>Vancouver, BC, CA</p>
                         <p> Developer, Animal lover, Canada proud</p>
 
-                        <img src="img/scaled/Pramit.jpg" alt="Pramit Rashinkar">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Pramit.jpg" src="img/small/small-Pramit.jpg" alt="Pramit Rashinkar">
+                        </div>
                         <h2>Pramit Rashinkar</h2>
                         <p>San Diego, CA, USA</p>
                         <p> Product Developer, Ketogenic lifestyle, First in, last out</p>
 
-                        <img src="img/scaled/Romeo.jpg" alt="Romeo Van Snick">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Romeo.jpg" src="img/small/small-Romeo.jpg" alt="Romeo Van Snick">
+                        </div>
                         <h2>Romeo Van Snick</h2>
                         <p>Antwerpren, Belgium</p>
-                        <p> Developer and& physicist, Loves to bike, DJ by night</p>
+                        <p> Developer and physicist, Loves to bike, DJ by night</p>
 
-                        <img src="img/scaled/Sam.jpg" alt="Sam Hogg">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Sam.jpg" src="img/small/small-Sam.jpg" alt="Sam Hogg">
+                        </div>
                         <h2>Sam Hogg</h2>
                         <p> Auckland, New Zealand </p>
                         <p> Healthcare and Data Viz developer, Drives the banter bus, Australian immigrating to the US, Cafe hunter</p>
 
-                        <img src="img/scaled/Sib.jpg" alt="Sibjeet Mahapatra">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Sib.jpg"  src="img/small/small-Sib.jpg" alt="Sibjeet Mahapatra">
+                        </div>
                         <h2>Sib Mahapatra</h2>
                         <p> New York City, NY, USA </p>
                         <p> BizDev, Crossing Mongolia, Aspiring writer and storyteller</p>
 
 
-                        <img src="img/scaled/Tom.jpg" alt="Tom Ruttle">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Tom.jpg" src="img/small/small-Tom.jpg" alt="Tom Ruttle">
+                        </div>
                         <h2>Tom Ruttle</h2>
                         <p>London, England</p>
                         <p> Full stack developer, City walker (hates uber), Dryer sense of humor, We caught him smiling a few times</p>
 
-                        <img src="img/scaled/Wendy.jpg" alt="Wendy Hu">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Wendy.jpg" src="img/small/small-Wendy.jpg" alt="Wendy Hu">
+                        </div>
                         <h2>Wendy Hu</h2>
                         <p>Sydney, Australia</p>
                         <p> Business entrepreneur, Newly minted digital nomad, Can eat more than Foca, Ballet flats for days</p>
 
 
-                        <img src="img/scaled/Whitney.jpg" alt="Whitney Perkins">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Whitney.jpg"  src="img/small/small-Whitney.jpg" alt="Whitney Perkins">
+                        </div>
                         <h2>Whitney Perkins</h2>
                         <p>Fayetteville, AR, USA</p>
                         <p> Data analyst and manager, Southern girl, Loves college football, Will not budge on eating vegetables</p>
 
-                        <img src="img/scaled/Wienke.jpg" alt="Wienke Giezeman">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Wienke.jpg" src="img/small/small-Wienke.jpg" alt="Wienke Giezeman">
+                        </div>
                         <h2>Wienke Giezeman</h2>
                         <p>Amsterdam, Netherlands</p>
                         <p> Initiator and cofounder, Rocks a baby bjorn like you've never seen, Leads the boyband at karaoke, Dad dance moves</p>
 
-                        <img src="img/scaled/Wouter.jpg" alt="Wouter Vernaillen">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Wouter.jpg" src="img/small/small-Wouter.jpg" alt="Wouter Vernaillen">
+                        </div>
                         <h2>Wouter Vernaillen</h2>
                         <p>Ghent, Belgium</p>
                         <p> Developer and founder, Belgian beer expert, DevNomad</p>
 
-                        <img src="img/scaled/Daisy.jpg" alt="Daisy Jing">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Daisy.jpg" src="img/small/small-Daisy.jpg" alt="Daisy Jing">
+                        </div>
                         <h2>Daisy Jing</h2>
-                        <p>Las Angeles, CA, USA</p>
+                        <p>Los Angeles, CA, USA</p>
                         <p> Small business owner and Youtuber, Not so camera shy, Loves laser lights at the dance club</p>
 
-                        <img src="img/scaled/Carl.jpg" alt="Carl Sue">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Carl.jpg" src="img/small/small-Carl.jpg" alt="Carl Sue">
+                        </div>
                         <h2>Carl Sue</h2>
-                        <p>Las Angeles, CA, USA</p>
+                        <p>Los Angeles, CA, USA</p>
                         <p> Hacker and security engineer, Motorcycles and tattoos, Aka Cobolt Blue</p>
 
-                        <img src="img/scaled/Bernardo.jpg" alt="Bernardo Salinas">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Bernardo.jpg"  src="img/small/small-Bernardo.jpg" alt="Bernardo Salinas">
+                        </div>
                         <h2>Bernardo Salinas</h2>
                         <p> San Antonio, TX, USA</p>
                         <p> Project manager, Writer, Makes a mean margarita sans ice</p>
 
-                        <img src="img/scaled/Aaron.jpg" alt="Aaron Schleichkorn">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Aaron.jpg" src="img/small/small-Aaron.jpg" alt="Aaron Schleichkorn">
+                        </div>
                         <h2>Aaron Schleichkorn</h2>
                         <p> Ravenswood, Chicago, USA</p>
                         <p> Bike designer, developer and svg artist, Loves talking to strangers, Makes a mean fiber bowl</p>
 
-                        <img src="img/scaled/Alexey.jpg" alt="Alexey Komissarouk">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Alexey.jpg" src="img/small/small-Alexey.jpg" alt="Alexey Komissarouk">
+                        </div>
                         <h2>Alexey Komissarouk</h2>
                         <p> Tel Aviv, Israel</p>
                         <p> Developer and founder, World traveler</p>
 
-                        <img src="img/scaled/Andrei.jpg" alt="Andrei Mitrea">
+                        <div class="img-container">
+                          <div class="loader">
+                          </div>
+                          <img class="placeholder-img" data-load-in-background="img/scaled/Andrei.jpg" src="img/small/small-Andrei.jpg" alt="Andrei Mitrea">
+                        </div>
                         <h2>Andrei Mitrea</h2>
                         <p>
                           (guest illustration: Dale Johnson)
                         </p>
                         <p> Bucharest, Romania</p>
                         <p> Developer, Avid runner, Trivia night frequenter </p>
-
                     </div>
                 </div>
             </div>
